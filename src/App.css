@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration:none;
+  color:inherit;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header{
+  display:flex;
+  justify-content:space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 1px solid #f9f9f9;
+}
+.header img{
+  height:40px;
+  object-fit: contain;
+}
+.card{
+  position: relative;
+  width:600px;
+  padding:20px;
+  max-width:85vw;
+  height:65vh;
+  border-radius:20px;
+  background-size: cover;
+  object-fit: cover;
+  background-position:center;
+  box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+}
+.card > h3{
+  position:absolute;
+  bottom: 10px;
+  color:white;
+}
+.tinderCards_container{
+  display:flex;
+  justify-content:center;
+  margin-top:5vh;
+}
+.swipe{
+  position:absolute;
+}
+.card-buttons{
+  position: fixed;
+  bottom:5vh;
+  width: 100%;
+  display:flex;
+  justify-content:space-evenly;
+}
+.card-buttons .MuiIconButton-root{
+  background-color: white !important;
+  box-shadow: 0px 10px 53px 0px rgba(0, 0, 0, 0.3);
+}
+.replay-btn{
+  color: #f5b748 !important;
+}
+.close-btn{
+  color:#ec5e6f !important;
+}
+.star-btn{
+  color:#62b4f9 !important;
+}
+.favirate-btn{
+  color: #76e2b3 !important;
+}
+.flash-btn{
+  color:#915dd1 !important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* =====Chats Css===== */
+    .chat{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:20px;
+      height:70px;
+      border-bottom:1px solid #fafafa;
+    }
+    .chat .chat_image{
+      margin-right: 20px;
+    }
+    .chat .chat_detailes{
+      flex: 1;
+    }
+    .chat .chat_detailes p{
+      color:gray;
+    }
+    .chat_timestamp{
+      color:lightgray;
+    }
+/* ===X==Chats Css===X== */
+/* ======Chat Room====== */
+    .chat-timestamp{
+      text-align:center;
+      padding:20px;
+      color:gray;
+    }
+    .chatscrren_messages{
+      display:flex;
+      align-items:center;
+      padding:20px;
+    }
+    .chat_scrren_text{
+      margin-left: 10px;
+      background-color:lightgray;
+      padding:15px;
+      border-radius:20px;
+    }
+    .chatscrren_user_text{
+      margin-left: auto;
+      background-color:#29b3cd;
+      padding:15px;
+      border-radius:20px;
+      color:white;
+    }
+    .chat_rom_input{
+      display:flex;
+      padding:5px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border-top:1px solid lightgray;
+    }
+    .chat_inputFiled{
+      flex: 1;
+      padding:10px;
+      outline: none;
+      border:none;
+    }
+    .send_button{
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: #fe3d71;
+      margin-right:20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+/* ====X==Chat Room==X==== */

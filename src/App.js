@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import React from "react";
+import { Redirect, Route, Switch } from 'react-router';
 import './App.css';
-
+import Chats from "./components/Chats";
+import Header from "./components/Header";
+import ChatRoom from "./components/ChatRoom";
+import TinderCards from "./components/TinderCards";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+        <Route exact path="/">
+          <Header/>
+          <TinderCards/>
+        </Route>
+        <Route exact path="/chat">
+          <Header backbutton="/" />
+          <Chats/>
+        </Route>
+        <Route exact path="/chat/:person">
+          <Header backbutton="/chat" />
+          <ChatRoom/>
+        </Route>
+        <Redirect to="/" />
+      </Switch>
   );
 }
 
