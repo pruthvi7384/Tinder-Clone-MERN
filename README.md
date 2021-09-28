@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## [Live Demo of Tinder clone app](https://tinder-clone-69e7a.web.app/)
+## [Live Demo of Tinder clone app](https://tinder-clone-mren.netlify.app)
 
 ## Process of developing intro
 
@@ -156,6 +156,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-```
-
-```
